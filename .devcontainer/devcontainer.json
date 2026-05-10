@@ -1,4 +1,14 @@
 {
-    "name": "Ubuntu",
-    "image": "mcr.microsoft.com/devcontainers/base:jammy"
+	"name": "Laboratorio de Seguridad - CFL 406",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:1": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"upgradePackages": true
+		}
+	},
+
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet && figlet 'CFL 406 - KALI'"
 }
