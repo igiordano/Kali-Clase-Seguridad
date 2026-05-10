@@ -5,11 +5,10 @@
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:1": {
 			"installZsh": false,
-			"upgradePackages": true
+			"upgradePackages": false
 		}
 	},
 
-	// Instalamos todo y creamos el script de saludo en /etc/profile.d/
-	// Los scripts en esa carpeta se ejecutan para TODOS los usuarios al abrir cualquier terminal.
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip && echo 'figlet \"CFL 406 - KALI\"' | sudo tee /etc/profile.d/bienvenida.sh"
+	// Solo herramientas esenciales para Redes y Auditoría
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap python3-pip"
 }
