@@ -10,7 +10,18 @@
 		}
 	},
 
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip",
-	
-	"postStartCommand": "echo \"figlet 'CFL 406 - KALI'\" >> ~/.bashrc"
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip && echo \"figlet 'CFL 406 - KALI'\" >> ~/.bashrc",
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"args": ["-l"]
+					}
+				}
+			}
+		}
+	}
 }
