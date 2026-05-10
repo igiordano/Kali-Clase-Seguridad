@@ -1,12 +1,4 @@
 {
-    "name": "Kali Linux",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "onCreateCommand": "sudo apt-get update && sudo apt-get install -y kali-linux-headless",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python"
-            ]
-        }
-    }
+    "name": "Ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:jammy"
 }
