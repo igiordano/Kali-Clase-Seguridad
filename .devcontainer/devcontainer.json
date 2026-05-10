@@ -4,24 +4,12 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:1": {
-			"installZsh": true,
-			"configureZshAsDefaultShell": true,
+			"installZsh": false,
 			"upgradePackages": true
 		}
 	},
 
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip && echo \"figlet 'CFL 406 - KALI'\" >> ~/.bashrc",
-
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"terminal.integrated.profiles.linux": {
-					"bash": {
-						"path": "/bin/bash",
-						"args": ["-l"]
-					}
-				}
-			}
-		}
-	}
+	// Instalamos todo y creamos el script de saludo en /etc/profile.d/
+	// Los scripts en esa carpeta se ejecutan para TODOS los usuarios al abrir cualquier terminal.
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip && echo 'figlet \"CFL 406 - KALI\"' | sudo tee /etc/profile.d/bienvenida.sh"
 }
