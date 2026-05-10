@@ -10,5 +10,7 @@
 		}
 	},
 
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet && figlet 'CFL 406 - KALI'"
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap figlet python3-pip",
+	
+	"postStartCommand": "echo \"figlet 'CFL 406 - KALI'\" >> ~/.bashrc"
 }
