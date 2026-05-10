@@ -9,6 +9,6 @@
 		}
 	},
 
-	// Solo herramientas esenciales para Redes y Auditoría
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap python3-pip"
+	// Instalación de herramientas de Redes, Auditoría, Python, PHP y Docker
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap python3-pip php-cli libapache2-mod-php curl && docker pull alpine"
 }
