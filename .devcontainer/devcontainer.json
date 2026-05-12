@@ -6,9 +6,30 @@
 		"ghcr.io/devcontainers/features/common-utils:1": {
 			"installZsh": false,
 			"upgradePackages": false
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:1": {
+			"version": "latest"
 		}
 	},
 
-	// Instalación de herramientas de Redes, Auditoría, Python, PHP y Docker
-	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap python3-pip php-cli libapache2-mod-php curl && docker pull alpine"
+	// Herramientas base: Redes, Auditoría, Python, PHP y Docker
+	"postCreateCommand": "sudo apt update && sudo apt install -y iputils-ping net-tools dnsutils traceroute nmap whois netcat-traditional hping3 nikto dirb sqlmap python3-pip python3-venv php-cli libapache2-mod-php curl git nano vim && docker pull alpine",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-python.python",
+				"esbenp.prettier-vscode",
+				"formulahendry.terminal"
+			],
+			"settings": {
+				"terminal.integrated.fontSize": 14,
+				"terminal.integrated.cursorStyle": "line",
+				"terminal.integrated.copyOnSelection": true
+			}
+		}
+	},
+
+	"remoteUser": "vscode"
 }
