@@ -1,5 +1,3 @@
-# Kali-Clase-Seguridad
-Entorno de Kali Linux para alumnos
 # 🛡️ Laboratorio de Seguridad Informática - CFL 406
 
 Bienvenido al entorno de prácticas. Este laboratorio está configurado con las herramientas de Kali Linux necesarias para los Módulos I y II.
