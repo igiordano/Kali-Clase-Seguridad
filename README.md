@@ -15,8 +15,6 @@ Bienvenido al entorno de prácticas. Este laboratorio está configurado con las 
 Nota: GitHub les va a pedir que inicien sesión con su propia cuenta. Al hacerlo, GitHub creará una copia exacta de tu configuración para cada alumno. Lo que uno rompa no afecta al resto.
 
 ### 🛠️ Herramientas incluidas:
-
-### 🛠️ Herramientas incluidas:
 - **Redes:** `nmap`, `netcat`, `traceroute`, `hping3`.
 - **Web/Dato:** `sqlmap`, `nikto`, `python3`, `php-cli`.
 - **Víctima:** Imagen de `Alpine Linux` lista para desplegar.
