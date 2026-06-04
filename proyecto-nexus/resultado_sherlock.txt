@@ -1,0 +1,9 @@
+Update available! 0.16.1 --> 0.16.0
+https://github.com/sherlock-project/sherlock/releases/tag/v0.16.0
+[*] Checking username administrador_nexus on:
+
+[+] BoardGameGeek: https://boardgamegeek.com/user/administrador_nexus
+[+] Chess: https://www.chess.com/member/administrador_nexus
+[+] omg.lol: https://administrador_nexus.omg.lol
+
+[*] Search completed with 3 results
