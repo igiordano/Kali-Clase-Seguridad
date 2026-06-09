@@ -1,0 +1,18 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:35531         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:34477         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:2000            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:45401         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:12563         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:16634         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:16635         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:13005         0.0.0.0:*               LISTEN     
+tcp6       0      0 ::1:16635               :::*                    LISTEN     
+tcp6       0      0 ::1:16634               :::*                    LISTEN     
+tcp6       0      0 :::80                   :::*                    LISTEN     
+tcp6       0      0 :::2000                 :::*                    LISTEN     
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 10.0.1.248:68           0.0.0.0:*                          
