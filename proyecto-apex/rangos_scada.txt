@@ -1,0 +1,1 @@
+RANGOS CRÍTICOS: Turbina_01 = Max 4500 RPM | Voltaje_Limite = 220V
